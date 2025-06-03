@@ -300,3 +300,37 @@ footer {
   position: relative;
   overflow: visible; /* musí být visible, aby linka byla vidět */
 }
+
+.qr-on-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+@media (max-width: 700px) {
+  .qr-on-desktop {
+    display: none;
+  }
+}
+.qr-popis {
+  font-size: 0.95em;
+  color: #007acc;
+  margin-top: 0.2rem;
+}
+
+.qr-on-desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+@media (max-width: 700px) {
+  .qr-on-desktop {
+    display: none;
+  }
+}
+.qr-popis {
+  font-size: 0.95em;
+  color: #007acc;
+  margin-top: 0.2rem;
+}

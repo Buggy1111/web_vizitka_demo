@@ -71,15 +71,22 @@
   </section>
 
   <!-- KONTAKT -->
-  <section class="contact scroll-animate desktop-animate">
-    <h2>Kontakt</h2>
-    <p><i class="fas fa-phone"></i> +420 777 123 456</p>
-    <p><i class="fas fa-envelope"></i> info@elektronovak.cz</p>
-    <p><i class="fas fa-map-marker-alt"></i> Opava, Moravskoslezský kraj</p>
-    <p><strong>IČO:</strong> 12345678</p>
-  </section>
+<section class="contact scroll-animate desktop-animate">
+  <h2>Kontakt</h2>
+  <p><i class="fas fa-phone"></i> +420 777 123 456</p>
+  <p><i class="fas fa-envelope"></i> info@elektronovak.cz</p>
+  <p><i class="fas fa-map-marker-alt"></i> Opava, Moravskoslezský kraj</p>
+  <p><strong>IČO:</strong> 12345678</p>
 
-  <form action="https://formspree.io/f/moqzylra" method="POST" class="contact-form">
+  <!-- QR KÓD – zobrazí se jen na desktopu -->
+  <div class="qr-on-desktop">
+    <img src="qrcode.png" alt="QR kód na mobilní kontakt" width="130" height="130">
+    <p class="qr-popis">Naskenujte pro rychlé volání nebo přidání kontaktu</p>
+  </div>
+</section>
+
+<!-- FORMULÁŘ (už mimo sekci kontakt) -->
+<form action="https://formspree.io/f/moqzylra" method="POST" class="contact-form">
   <label for="name">Jméno:<span style="color:#0099ff;">*</span></label>
   <input type="text" name="name" id="name" required>
 
@@ -97,8 +104,6 @@
   <button type="submit">Odeslat</button>
 </form>
 
-
-  </section>
 
   <!-- MAPA -->
   <section class="map scroll-animate desktop-animate">
