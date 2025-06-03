@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Titulek stránky -->
+  <title>ElektroNovák.cz | Elektroinstalace, revize a chytré domy Opava, Ostrava</title>
+
+  <!-- Popis stránky -->
+  <meta name="description" content="ElektroNovák.cz – odborné elektroinstalace, revize a chytré domácnosti v Moravskoslezském kraji. Rychlé a spolehlivé služby pro Opavu, Ostravu a okolí. Volejte: 777 123 456." />
+
+  <!-- Klíčová slova (dnes už jen doplněk) -->
+  <meta name="keywords" content="elektroinstalace, revize elektro, chytré domácnosti, elektro Opava, elektro Ostrava, elektrikář, Moravskoslezský kraj" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Otevřená grafika pro sdílení na sociálních sítích -->
+  <meta property="og:title" content="ElektroNovák.cz | Elektroinstalace a revize Opava, Ostrava" />
+  <meta property="og:description" content="Odborné elektroinstalace, revize a chytré domácnosti v Moravskoslezském kraji. Férové ceny, zkušenosti a rychlá realizace." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.elektronovak.cz/" />
+  <!-- Pokud máš logo nebo úvodní obrázek, nahraď cestu obrázku: -->
+  <!-- <meta property="og:image" content="https://www.elektronovak.cz/logo.png" /> -->
+
+  <!-- Výchozí styl -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fonty -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Ikony -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+
+  <!-- HLAVIČKA -->
+  <header class="hero desktop-animate">
+    <div class="hero-flex">
+      <img src="logo.png" alt="Logo ElektroNovák.cz" class="logo">
+      <div class="hero-title">
+        <h1>ElektroNovák.cz</h1>
+        <p>Profesionální elektroinstalace a revize • Moravskoslezský kraj</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- O NÁS -->
+  <section class="about scroll-animate desktop-animate">
+    <h2>O nás</h2>
+    <p>
+      Jsme malá rodinná firma s více než 15 lety zkušeností v oblasti elektroinstalací.
+      Nabízíme kompletní služby od návrhu, přes montáž až po revize.
+      Spolehlivost, férové ceny a lidský přístup – to je náš základ.
+    </p>
+  </section>
+
+  <!-- SLUŽBY -->
+  <section class="services scroll-animate desktop-animate">
+    <h2>Služby</h2>
+    <ul>
+      <li>💡 Domácí a bytová elektroinstalace</li>
+      <li>🏠 Chytré domácnosti (smart home)</li>
+      <li>📋 Revize a kontroly elektro</li>
+      <li>🏢 Průmyslové elektroinstalace</li>
+      <li>🔌 Zapojení spotřebičů a světel</li>
+      <li>⚡ Odstraňování poruch</li>
+    </ul>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact scroll-animate desktop-animate">
+    <h2>Kontakt</h2>
+    <p><i class="fas fa-phone"></i> +420 777 123 456</p>
+    <p><i class="fas fa-envelope"></i> info@elektronovak.cz</p>
+    <p><i class="fas fa-map-marker-alt"></i> Opava, Moravskoslezský kraj</p>
+    <p><strong>IČO:</strong> 12345678</p>
+  </section>
+
+  <form action="https://formspree.io/f/moqzylra" method="POST" class="contact-form">
+  <label for="name">Jméno:<span style="color:#0099ff;">*</span></label>
+  <input type="text" name="name" id="name" required>
+
+  <label for="email">E-mail:<span style="color:#0099ff;">*</span></label>
+  <input type="email" name="email" id="email" required>
+
+  <label for="phone">Telefon:<span style="color:#0099ff;">*</span></label>
+  <input type="tel" name="phone" id="phone" pattern="[0-9 ]{9,15}" placeholder="Např. 777 123 456" required>
+
+  <label for="message">Zpráva:<span style="color:#0099ff;">*</span></label>
+  <textarea name="message" id="message" rows="5" required></textarea>
+
+  <p class="form-note">Pole označená <span style="color: #0099ff;">*</span> jsou povinná.</p>
+
+  <button type="submit">Odeslat</button>
+</form>
+
+
+  </section>
+
+  <!-- MAPA -->
+  <section class="map scroll-animate desktop-animate">
+    <h2><i class="fas fa-map-marker-alt"></i> Kde nás najdete</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2535.1445708414374!2d17.894439815915375!3d49.938551979413754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471179fb37e3c091%3A0x4860b29e9055b5d1!2sOlomouck%C3%A1%2025%2C%20747%2005%20Opava!5e0!3m2!1scs!2scz!4v1620913099999!5m2!1scs!2scz" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- PATIČKA -->
+  <footer class="scroll-animate desktop-animate">
+    <div class="footer-line top"></div>
+
+    <div class="footer-content">
+      <p><i class="fas fa-phone"></i> +420 777 123 456</p>
+      <p><i class="fas fa-envelope"></i> info@elektronovak.cz</p>
+      <p><i class="fas fa-map-marker-alt"></i> Opava, Moravskoslezský kraj</p>
+      <p>© 2025 ElektroNovák.cz | <strong>Vytvořeno jako web vizitka</strong></p>
+    </div>
+
+    <div class="footer-line bottom"></div>
+  </footer>
+
+<!-- ANIMACE SEKCE JEN NA MOBILU -->
+<script>
+  // Animace sekcí na mobilu při scrollování (zleva)
+  function runMobileScrollAnim() {
+    const elements = document.querySelectorAll('.scroll-animate, .footer-animate');
+    // Mobilní animace při scrollu (jen pod 701px)
+    if (window.innerWidth <= 700) {
+      function onScroll() {
+        elements.forEach(el => {
+          const rect = el.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 40) {
+            el.classList.add('visible');
+          }
+        });
+      }
+      elements.forEach(el => el.classList.remove('visible'));
+      window.addEventListener('scroll', onScroll);
+      onScroll(); // inicializace
+      return;
+    }
+    // Na desktopu: vždy vše viditelné (animace řeší samostatná funkce)
+    elements.forEach(el => el.classList.add('visible'));
+  }
+
+  // Desktop animace: fade-in+slide-up při načtení, postupně sekce za sebou
+  function revealDesktopSections() {
+    if (window.innerWidth > 700) {
+      const elements = document.querySelectorAll('.desktop-animate');
+      elements.forEach((el, i) => {
+        el.classList.remove('visible');
+        setTimeout(() => el.classList.add('visible'), 200 + i * 170);
+      });
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    runMobileScrollAnim();
+    revealDesktopSections();
+  });
+  window.addEventListener('resize', () => {
+    runMobileScrollAnim();
+    revealDesktopSections();
+  });
+</script>
+</body>
+</html>
