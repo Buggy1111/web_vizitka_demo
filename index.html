@@ -138,25 +138,40 @@
 <!-- ANIMACE SEKCE JEN NA MOBILU -->
 <script>
   // Animace sekcí na mobilu při scrollování (zleva)
+  let mobileScrollHandler = null;
+
   function runMobileScrollAnim() {
     const elements = document.querySelectorAll('.scroll-animate, .footer-animate');
+
     // Mobilní animace při scrollu (jen pod 701px)
     if (window.innerWidth <= 700) {
-      function onScroll() {
+      const onScroll = () => {
         elements.forEach(el => {
           const rect = el.getBoundingClientRect();
           if (rect.top < window.innerHeight - 40) {
             el.classList.add('visible');
           }
         });
-      }
+      };
+
       elements.forEach(el => el.classList.remove('visible'));
-      window.addEventListener('scroll', onScroll);
+
+      if (mobileScrollHandler) {
+        window.removeEventListener('scroll', mobileScrollHandler);
+      }
+      mobileScrollHandler = onScroll;
+      window.addEventListener('scroll', mobileScrollHandler);
       onScroll(); // inicializace
       return;
     }
+
     // Na desktopu: vždy vše viditelné (animace řeší samostatná funkce)
     elements.forEach(el => el.classList.add('visible'));
+
+    if (mobileScrollHandler) {
+      window.removeEventListener('scroll', mobileScrollHandler);
+      mobileScrollHandler = null;
+    }
   }
 
   // Desktop animace: fade-in+slide-up při načtení, postupně sekce za sebou
